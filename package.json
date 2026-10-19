@@ -1,0 +1,33 @@
+{
+  "name": "wjorg-legal-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for wjorg.com — Chinese legal practice: articles, statutes, guides, compensation standards, judicial resources, legal calculators.",
+  "mcpName": "com.wjorg/legal-mcp",
+  "bin": {
+    "wjorg-legal-mcp": "bin/wjorg-legal-mcp.js"
+  },
+  "main": "bin/wjorg-legal-mcp.js",
+  "type": "commonjs",
+  "files": [
+    "bin/",
+    "SKILL.md",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "legal",
+    "china-law",
+    "statutes",
+    "legal-calculator"
+  ],
+  "license": "MIT",
+  "homepage": "https://wjorg.com",
+  "scripts": {
+    "start": "node bin/wjorg-legal-mcp.js",
+    "smoke": "node test/smoke.js"
+  }
+}

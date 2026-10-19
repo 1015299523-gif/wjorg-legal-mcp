@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "律师教你怎么做": {
+      "type": "http",
+      "url": "https://wjorg.com/mcp",
+      "description": "中国法律实务：原创文章检索、法规条文、办事指南、赔偿标准、司法资源、56 个法律计算器"
+    }
+  }
+}
