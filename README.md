@@ -78,6 +78,15 @@ docker build -t wjorg-legal-mcp .
 docker run -i --rm wjorg-legal-mcp
 ```
 
+## Docker 运行
+
+```bash
+docker run -i --rm ghcr.io/wjorg-law/wjorg-legal-mcp:latest
+```
+
+镜像是对 `https://wjorg.com/mcp` 的 stdio 桥（可用 `-e WJORG_MCP_URL` 覆盖端点）。
+由 GitHub Actions 在每次推送到 master 后自动构建发布，双架构（amd64 + arm64）。
+
 ## 验证是否接通
 
 ```bash
