@@ -50,25 +50,24 @@ Cline、Cherry Studio、Chatbox、WorkBuddy、Cursor 等支持远程 MCP 的客�
 
 ### 二、只支持 stdio 的客户端
 
-用仓库里的薄壳转发（零依赖，Node 18+）：
-
-```bash
-git clone https://github.com/<owner>/wjorg-legal-mcp.git
-cd wjorg-legal-mcp
-node bin/wjorg-legal-mcp.js
-```
-
-客户端配置：
+零依赖，Node 18+，无需克隆仓库：
 
 ```json
 {
   "mcpServers": {
     "律师教你怎么做": {
-      "command": "node",
-      "args": ["/绝对路径/wjorg-legal-mcp/bin/wjorg-legal-mcp.js"]
+      "command": "npx",
+      "args": ["-y", "github:wjorg-law/wjorg-legal-mcp"]
     }
   }
 }
+```
+
+也可克隆后直接运行：
+
+```bash
+git clone https://github.com/wjorg-law/wjorg-legal-mcp.git
+node wjorg-legal-mcp/bin/wjorg-legal-mcp.js
 ```
 
 ### 三、Docker
